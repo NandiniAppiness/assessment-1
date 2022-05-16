@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="website/script.js"></script>
+
+    <title>cart login</title>
+  </head>
+  <style>
+    body {
+      background-color: black;
+      max-width: 120rem;
+      background-image: url(images/ing/back_image.jpg);
+      background-size: cover;
+      background-attachment: fixed;
+      opacity: 90%;
+    }
+    .loginContainer {
+      background-color: #1399fffe;
+      opacity: 80%;
+      border-radius: 5%;
+      width: 250px;
+      height: 250px;
+      padding: 50px;
+      border: 1px solid black;
+      margin: auto;
+      margin-top: 150px;
+    }
+    .loginContainer:hover {
+      background-color: #1399ffc8;
+    }
+    #form {
+      margin: auto 0;
+    }
+
+    #text {
+      color: #fff;
+      font-size: 20px;
+      padding-right: 10px;
+    }
+
+    #logButton {
+      margin: 10% 10%;
+      justify-content: center;
+      background-color: #fff;
+      color: black;
+      font-size: 1em;
+      border-radius: 5%;
+      padding: 10px 80px;
+    }
+
+    #logButton:hover {
+      background-color: rgb(25, 166, 254);
+      color: #fff;
+    }
+    .inputText {
+      padding: 10px 5px 10px 10px;
+      justify-content: center;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    #bimage {
+      width: 80px;
+      height: 80px;
+    }
+    .companylogo {
+      padding: 20px;
+      width: 5%;
+    }
+    .companylogo:hover {
+      background-color: rgb(255, 255, 255);
+      border-radius: 10%;
+      opacity: 90%;
+    }
+  </style>
+  <script>
+    function myFunction() {
+      var un = document.forms["myForm"]["Uname"].value;
+      var pw = document.forms["myForm"]["Pass"].value;
+      if (un == "appiness@gmail.com" && pw == "1234") {
+        window.location.href = "carts.html";
+      } else {
+        alert("Invalid Username and PassWord");
+      }
+    }
+  </script>
+  <body>
+    <div class="companylogo">
+      <img id="bimage" src="images/ing/bas.png" />
+    </div>
+    <div class="loginContainer">
+      <form name="myForm" action="" method="post">
+        <label id="text">Email address</label>
+        <input
+          type="email"
+          name="Uname"
+          class="inputText"
+          placeholder="123@gmail.com"
+        />
+        <br /><br />
+        <label id="text">Password</label>
+        <input
+          type="password"
+          name="Pass"
+          class="inputText"
+          placeholder="Password"
+        />
+        <br /><br />
+
+        <input
+          type="button"
+          value="Login"
+          name="log"
+          id="logButton"
+          onclick="myFunction()"
+        />
+      </form>
+    </div>
+  </body>
+</html>

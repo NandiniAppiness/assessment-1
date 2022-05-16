@@ -1,0 +1,88 @@
+.differentcarts {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.stickercart {
+  padding: 20px;
+}
+.stickercart img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+  border-radius: 10%;
+  box-shadow: 10px 8px rgba(205, 205, 205, 0.704);
+  border: rgb(143, 138, 138) solid;
+  background-size: cover;
+}
+
+.stickercart img:hover {
+  transform: scale(1.1);
+
+  transition: 0.5s;
+}
+
+.elcContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(254, 254, 254);
+}
+
+.elc {
+  margin: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 2px solid rgb(153, 152, 152);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 10px 8px rgb(188, 185, 185);
+}
+
+.elc img {
+  width: 300px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.elc img:hover {
+  transform: scale(1.01);
+}
+.prddesc {
+  padding: 20px;
+  background-color: rgb(29, 121, 192);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 2px solid rgb(153, 152, 152);
+}
+.prddesc:hover {
+  background-color: rgb(29, 126, 244);
+}
+
+.prddesc p {
+  color: white;
+  font-size: 20px;
+}
+
+.btn {
+  padding: 10px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+.btn1 {
+  font-size: 15px;
+  background-color: rgb(86, 122, 239);
+
+  color: white;
+}
+
+.btn1:hover {
+  background-color: yellow;
+  color: black;
+  cursor: pointer;
+}
